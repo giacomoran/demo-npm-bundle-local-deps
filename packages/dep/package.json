@@ -1,0 +1,9 @@
+{
+  "name": "@demo/dep",
+  "private": "true",
+  "type": "module",
+  "main": "src/index.js",
+  "dependencies": {
+    "lande": "^1.0.10"
+  }
+}

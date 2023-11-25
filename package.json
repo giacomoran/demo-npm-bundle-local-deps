@@ -1,0 +1,19 @@
+{
+  "name": "demo-npm-bundle-local-deps",
+  "private": "true",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "npm run -ws --if-present build:package && npm run -ws --if-present build:package-lock"
+  },
+  "devDependencies": {
+    "@npmcli/arborist": "^7.2.0",
+    "esbuild": "^0.19.7",
+    "esbuild-node-externals": "^1.9.0"
+  },
+  "engines": {
+    "node": "18"
+  }
+}

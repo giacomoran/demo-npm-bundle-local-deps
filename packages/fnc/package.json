@@ -1,0 +1,15 @@
+{
+  "name": "@demo/fnc",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "build:bundle": "node build.js bundle",
+    "build:bundle:watch": "node build.js bundle:watch",
+    "build:package": "node build.js package",
+    "build:package-lock": "node build.js package-lock"
+  },
+  "dependencies": {
+    "@demo/dep": "*",
+    "tiny-bin": "^1.6.3"
+  }
+}
